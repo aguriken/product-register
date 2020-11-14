@@ -25,4 +25,4 @@ services:
     volumes: 
       - 'db-data:/var/lib/postgresql/data'
     environment: 
-      - 'POSTGRES_HOST_AUTH_METHOD=true'
+      - 'POSTGRES_HOST_AUTH_METHOD=trust'
