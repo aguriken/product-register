@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Test Application build by Rails, Postgreql, Travis CI under Docker Environemt.
 
 * Ruby version
-
-* System dependencies
-
-* Configuration
+2.5.8
 
 * Database creation
-
-* Database initialization
+Postgreql version 11.9
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+rails test
+```
+
+* Docker
+
+```
+docker-compose up
+# or when you update Gemfile or Dockerfile etc
+docker-compose up --build
+
+# How to login docker-container
+docker-compose exec web bash
+```
 
 * Deployment instructions
-
-* ...
